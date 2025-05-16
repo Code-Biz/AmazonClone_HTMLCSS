@@ -1,0 +1,507 @@
+    * {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    color: white;
+    background-color: #131921;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+/* Box-1 (Logo) */
+
+/* Yahan ya issue araha tha k jo logo hain na usko upar ya neechay krtay thay to wo border ko cover krlteta tha.
+lekin yahan note krnay ki baat ye hai k logo k neeechay wala portion thora sa border k neechay cover hojata lekin
+jesay hi logo thora sa upar krain center main krnay k liay to uska upar wala portion bajayeee border k neechay cover honay k,
+border k upar ajata hai. Jabka main chahta hua k jesay neechay kuch portion border k under arey upar wala bhi esay hi ho. 
+ta k logo center main ajae.*/
+.nav-logo {
+    height: 55px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    background-image: url("Amazon-nav-logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}
+
+
+.border {
+    border: 0.5px solid transparent;
+}
+
+.border:hover {
+    border: 0.5px solid wheat;
+}
+
+
+/* Box-2 (Address Box) */
+
+.nav-address {
+    margin-left: -15px;
+}
+
+.addr-part-one p {
+    font-size: 0.55rem;
+    margin-left: 18px;
+    margin-bottom: -1px;
+}
+
+.addr-part-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addr-part-two p {
+    font-size: 0.7rem;
+    margin-left: 3px;
+    font-weight: 700;
+}
+
+.addr-part-two i {
+    font-size: 0.8rem;
+    margin-top: -1px;
+}
+
+
+/* Box-3 (Search-Bar)*/
+
+.nav-search {
+    display: flex;
+    width: 640px;
+    border-radius: 4px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.search-select {
+    border: none;
+    border-right: 0.1px solid #ccccce;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: rgb(232, 232, 232);
+    width: 125px;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.nav-search input {
+    border: none;
+    padding: 2px 4px 4px 10px;
+    width: 225%;
+    font-size: 0.75rem;
+}
+
+
+.search-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    color: #111111;
+    background-color: #FEBD69;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+
+/* Box-4 (Language) */
+.nav-lang {
+    display: flex;
+    padding: 10px 0px 0px 5px;
+}
+
+/* .lang-icon
+{
+    font-size: 1.2rem;
+} */
+
+.lang-select {
+    color: white;
+    background-color: transparent;
+    font-size: 0.65rem;
+    font-weight: 700;
+    border: none;
+}
+
+
+
+/* Box-5 and 6 (Accounts & Lists, Returns & Orders) */
+
+.nav-accounts,
+.nav-returns-orders {
+    display: block;
+    align-items: center;
+}
+
+.acc-part-one,
+.rtns-part-one {
+    font-size: 0.55rem;
+    margin-left: 4px;
+    margin-bottom: -4px;
+}
+
+.acc-part-two,
+.rtns-part-two {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+
+
+/* Box-7 (Cart) */
+.nav-cart {
+    display: flex;
+}
+
+.nav-cart i {
+    font-size: 1.4rem;
+}
+
+.nav-cart p {
+    color: white;
+    background-color: transparent;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border: none;
+    margin-left: 5px;
+    margin-top: 10px;
+
+}
+
+
+/* Panel-Bar */
+.panel {
+    color: white;
+    background-color: #2f3040;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.panel-menu {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    margin-left: 5px;
+    /*for icon of menu, in order to not asssign font size separately for it*/
+}
+
+.panel-menu p {
+    margin-left: 4px;
+    margin-bottom: 1px;
+    font-size: 0.8rem;
+}
+
+.panel-ops {
+    width: 80%;
+    font-size: 0.68rem;
+}
+
+.panel-ops p {
+    display: inline;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.panel-deals {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+
+/* Hero-Section */
+.hero-section {
+    background-image: url("hero-image.jpg");
+    height: 610px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-msg {
+    background-color: #F5F6F6;
+    /* #f6f4f4: color that i chose by myself just by seeing, #F5F6F6: color that was selected from amazon.site using color-picker*/
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 0.7rem;
+    height: 40px;
+    width: 100%;
+    margin: 0px 20px 250px 20px;
+    letter-spacing: 0.1px;
+}
+
+.hero-msg a {
+    color: #037386;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.hero-msg a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Shop-Section */
+.shop-section {
+    margin-top: -240px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 5px 10px 0px 10px;
+    background-color: #E3E6E6;
+}
+
+.box {
+    background-color: rgb(255, 255, 255);
+    height: 450px;
+    width: 23.75%;
+    padding: 10px 10px 10px 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    cursor: default;
+}
+
+.box-img {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+
+}
+
+.box a {
+    width: fit-content;
+    margin-left: 5px;
+    margin-top: 20px;
+    display: block;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #111111;
+}
+
+.box a:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer */
+footer {
+    height: 1150px;
+    width: 100%;
+}
+
+.back-top a {
+    color: white;
+    background-color: #37475A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    height: 50px;
+    width: 100%;
+    text-decoration: none;
+}
+
+.back-top a:hover {
+    background-color: #415267;
+}
+
+/* Foot Links */
+.foot-links {
+    color: white;
+    height: 400px;
+    display: flex;
+    background-color: #232F3E;
+    justify-content: space-evenly;
+    padding: 50px 150px 0px 150px;
+}
+
+.links-col {
+    height: 250px;
+    width: 800px;
+    padding: 0px 10px 0px 10px;
+}
+
+.links-colspace {
+    width: 100px;
+    height: 250px;
+    padding: 0px 10px 0px 10px;
+}
+
+.col-heading {
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: default;
+}
+
+.links-col ul {
+    font-size: 0.8rem;
+    margin-top: 10px;
+    padding: 0px;
+    list-style: none;
+}
+
+.links-col li {
+    margin-top: 12px;
+    letter-spacing: 0.2px;
+}
+
+.links-col a {
+    color: rgb(230, 230, 230);
+    font-size: 0.75rem;
+    text-decoration: none;
+}
+
+.links-col a:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer Buttons */
+
+.foot-box3 {
+    color: white;
+    background-color: #232F3E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+}
+
+hr {
+    height: 0.5px;
+    background-color: #CCCCCC;
+}
+
+.box3-part1 {
+    background-image: url("Amazon-nav-logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.box3-part2 {
+    display: flex;
+    align-items: center;
+    margin-left: 75px;
+
+}
+
+.part2-btns {
+    color: #CCCCCC;
+    margin-right: 8px;
+    border: 0.05px solid #CCCCCC;
+    border-radius: 3px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6rem;
+    padding: 4px 12px 4px 12px;
+
+}
+
+.part2-btns a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #CCCCCC;
+    height: 24px;
+}
+
+.part2-btns i {
+    font-size: 1rem;
+    margin-right: 2px;
+}
+
+
+
+
+
+.links-table {
+    background-color: #131A22;
+    height: 550px;
+    width: 100%;
+    padding-top: 30px;
+}
+
+table {
+    font-size: 0.6rem;
+    color: white;
+    margin: 0px 10px 0px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+td {
+    display: table-cell;
+    height: 85px;
+    width: 115px;
+    margin: 0px;
+    vertical-align: top;
+
+    padding: 0px 10px 0px 10px;
+}
+
+td a {
+    display: block;
+}
+
+td span {
+    display: block;
+    color: #CCCCCC;
+    font-size: 0.58rem;
+}
+
+.td-colspacer {
+    height: 85px;
+    width: 30px;
+}
+
+.td-rowspacer {
+    height: 15px;
+    width: 110px;
+}
+
+.copyrights {
+    height: 50px;
+    color: white;
+    background-color: #131A22;
+    font-size: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.copyrights-para a {
+    color: white;
+    margin: 0px 5px 0px 5px;
+    text-decoration: none;
+}
