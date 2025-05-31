@@ -13,6 +13,9 @@ This project is perfect for learning responsive design and modern CSS layout tec
 -   **No JavaScript:** 100% HTML & CSS for a fast, static experience.
 -   **Footer:** Amazon-inspired footer with useful links.
 
+
+## Screenshots
+
 ![image](https://github.com/user-attachments/assets/d8cb8326-383c-4e8b-bf20-7a7de6885faf)
 ![image](https://github.com/user-attachments/assets/3164f744-7b13-44c3-ac99-d68724b53463)
 ![image](https://github.com/user-attachments/assets/257aeb54-02e3-4356-bb7a-5c77a1d46255)
